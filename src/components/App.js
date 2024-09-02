@@ -78,9 +78,15 @@ function App() {
   return (
     <div>
       <div>
-        <button onClick={showAllEvents}>All Events</button>
-        <button onClick={showPastEvents}>Past Events</button>
-        <button onClick={showUpcomingEvents}>Upcoming Events</button>
+        <button className="btn" onClick={showAllEvents}>
+          All Events
+        </button>
+        <button className="btn" onClick={showPastEvents}>
+          Past Events
+        </button>
+        <button className="btn" onClick={showUpcomingEvents}>
+          Upcoming Events
+        </button>
       </div>
       <BigCalendar
         localizer={localizer}
